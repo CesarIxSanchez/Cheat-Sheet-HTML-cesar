@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheat Sheet HTML</title>
+    <link rel="stylesheet" href="/assets/Styles/main.css">
+</head>
+<body>
+    <!--Barra lateral-->
+    <nav class="sidebar" aria-label="Índice de elementos">
+        <ul>
+            <p>Elementos</p>
+            <li><a href="#doctype-html">&lt;!DOCTYPE html&gt;</a></li>
+            <li><a href="#html">&lt;html&gt;</a></li>
+            <li><a href="#head">&lt;head&gt;</a></li>
+            <li><a href="#body">&lt;body&gt;</a></li>
+            <li><a href="#title">&lt;title&gt;</a></li>
+            <li><a href="#p">&lt;p&gt;</a></li>
+            <li><a href="#header">&lt;header&gt;</a></li>
+            <li><a href="#nav">&lt;nav&gt;</a></li>
+            <li><a href="#main">&lt;main&gt;</a></li>
+            <li><a href="#aside">&lt;aside&gt;</a></li>
+            <li><a href="#footer">&lt;footer&gt;</a></li>
+            <li><a href="#h1-h6">&lt;h1&gt; - &lt;h6&gt;</a></li>
+            <li><a href="#span">&lt;span&gt;</a></li>
+            <li><a href="#a">&lt;a&gt;</a></li>
+            <li><a href="#ol">&lt;ol&gt;</a></li>
+            <li><a href="#ul">&lt;ul&gt;</a></li>
+            <li><a href="#li">&lt;li&gt;</a></li>
+            <li><a href="#dl">&lt;dl&gt;</a></li>
+            <li><a href="#table">&lt;table&gt;</a></li>
+            <li><a href="#img">&lt;img&gt;</a></li>
+            <li><a href="#audio">&lt;audio&gt;</a></li>
+            <li><a href="#video">&lt;video&gt;</a></li>
+            <li><a href="#iframe">&lt;iframe&gt;</a></li>
+            <li><a href="#object">&lt;object&gt;</a></li>
+            <li><a href="#form">&lt;form&gt;</a></li>
+        </ul>
+    </nav>
+
+    <main class="content" role="main">
+        <!--Encabezado-->
+        <header class="topbar">
+            <img src="/assets/logo-fdi.png" alt="Logo" class="logo">
+            <div class="encabezado-texto">
+                <h1>
+                Glosario de HTML
+                </h1>
+                <h2>
+                    Alumno: César Antonio Ix Sánchez. Matricula: 66271
+                </h2>
+            </div>
+        </header>
+
+        <!--Elementos-->
+        <div class="elemento">
+            <p class="titulo" id="doctype-html">&lt;!DOCTYPE html&gt;</p>
+            <p class="definicion">Indica al navegador que el documento está escrito en HTML5. No es una etiqueta, sino una declaración que ayuda a interpretar correctamente el código.</p>
+            <p class="definicion">Ejemplo en código:</p>
+            <p class="bloque-codigo">&lt;!DOCTYPE html&gt;</p>
+        </div>
+
+        <div class="elemento">
+            <p class="titulo" id="html">&lt;html&gt;</p>
+            <p class="definicion">Es la etiqueta raíz que encierra todo el contenido de la página web. Todo el documento va dentro de esta.</p>
+            <p class="definicion">Ejemplo en código:</p>
+            <p class="bloque-codigo">&lt;html lang="es"&gt;<br>&lt;!-- Aquí dentro van &lt;head&gt; y &lt;body&gt; --&gt;<br>&lt;/html&gt;</p>
+        </div>
+
+        <div class="elemento">
+            <p class="titulo" id="head">&lt;head&gt;</p>
+            <p class="definicion">Contiene información sobre el documento, como metadatos, enlaces a hojas de estilo, scripts o el título de la página. No muestra contenido directamente en la página.</p>
+            <p class="definicion">Ejemplo en código:</p>
+            <p class="bloque-codigo">&lt;head&gt;<br>&nbsp;&nbsp;&lt;meta charset="utf-8"&gt;<br>&nbsp;&nbsp;&lt;title&gt;Mi primera página&lt;/title&gt;<br>&lt;/head&gt;</p>
+        </div>
+
+        <div class="elemento">
+            <p class="titulo" id="body">&lt;body&gt;</p>
+            <p class="definicion">Encierra todo el contenido visible de la página: textos, imágenes, tablas, formularios, etc. Es lo que el usuario ve en el navegador.</p>
+            <p class="definicion">Ejemplo en código:</p>
+            <p class="bloque-codigo">&lt;body&gt;<br>&nbsp;&nbsp;&lt;h1&gt;Hola Mundo&lt;/h1&gt;<br>&nbsp;&nbsp;&lt;p&gt;Este es el contenido visible.&lt;/p&gt;<br>&lt;/body&gt;</p>
+        </div>
+
+        <div class="elemento">
+            <p class="titulo" id="title">&lt;title&gt;</p>
+            <p class="definicion">Define el título de la pestaña del navegador. Se escribe dentro del &lt;head&gt; y no aparece directamente en el cuerpo de la página.</p>
+            <p class="definicion">Ejemplo en código:</p>
+            <p class="bloque-codigo">&lt;head&gt;<br>&nbsp;&nbsp;&lt;title&gt;Catálogo de Aguas&lt;/title&gt;<br>&lt;/head&gt;</p>
+        </div>
+
+        <div class="elemento">
+            <p class="titulo" id="p">&lt;p&gt;</p>
+            <p class="definicion">Representa un párrafo de texto. Es una de las etiquetas más usadas para escribir contenido.</p>
+            <p class="definicion">Ejemplo en código:</p>
+            <p class="bloque-codigo">&lt;p&gt;Este es un párrafo de ejemplo en HTML.&lt;/p&gt;</p>
+            <p class="definicion">Este es un párrafo de ejemplo en HTML.</p>
+        </div>
+
+        <div class="elemento">
+            <p class="titulo" id="header">&lt;header&gt;</p>
+            <p class="definicion">Representa la cabecera de un documento o sección. Normalmente contiene el logo, el título o la barra de navegación principal.</p>
+            <p class="definicion">Ejemplo en código:</p>
+            <p class="bloque-codigo">&lt;header&gt;<br>&nbsp;&nbsp;&lt;h1&gt;Mi Sitio Web&lt;/h1&gt;<br>&nbsp;&nbsp;&lt;p&gt;Bienvenido a la página oficial.&lt;/p&gt;<br>&lt;/header&gt;</p>
+            <p class="definicion">El ejemplo lo tienes en la cabecera del inicio de la página.</p>
+        </div>
+
+        <div class="elemento">
+            <p class="titulo" id="nav">&lt;nav&gt;</p>
+            <p class="definicion">Define un bloque de enlaces de navegación. Se utiliza para menús, barras de navegación o listas de enlaces internos.</p>
+            <p class="definicion">Ejemplo en código:</p>
+            <p class="bloque-codigo">&lt;nav&gt;<br>&nbsp;&nbsp;&lt;ul&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="index.html"&gt;Inicio&lt;/a&gt;&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="productos.html"&gt;Productos&lt;/a&gt;&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="contacto.html"&gt;Contacto&lt;/a&gt;&lt;/li&gt;<br>&nbsp;&nbsp;&lt;/ul&gt;<br>&lt;/nav&gt;</p>
+            <p class="definicion">El ejemplo lo tienes a la izquierda de la página.</p>
+        </div>
+
+        <div class="elemento">
+            <p class="titulo" id="main">&lt;main&gt;</p>
+            <p class="definicion">Encierra el contenido principal del documento. Solo debe haber un &lt;main&gt; por página y no debería contener cosas repetitivas como menús o pies de página.</p>
+            <p class="definicion">Ejemplo en código:</p>
+            <p class="bloque-codigo">&lt;main&gt;<br>&nbsp;&nbsp;&lt;h2&gt;Catálogo de productos&lt;/h2&gt;<br>&nbsp;&nbsp;&lt;p&gt;Aquí van los artículos destacados.&lt;/p&gt;<br>&lt;/main&gt;</p>
+        </div>
+
+        <div class="elemento">
+            <p class="titulo" id="aside">&lt;aside&gt;</p>
+            <p class="definicion">Representa contenido complementario o secundario, como barras laterales, anuncios o notas adicionales.</p>
+            <p class="definicion">Ejemplo en código:</p>
+            <p class="bloque-codigo">&lt;aside&gt;<br>&nbsp;&nbsp;&lt;h3&gt;Publicidad&lt;/h3&gt;<br>&nbsp;&nbsp;&lt;p&gt;Compra 2x1 en refrescos esta semana.&lt;/p&gt;<br>&lt;/aside&gt;</p>
+        </div>
+
+        <div class="elemento">
+            <p class="titulo" id="footer">&lt;footer&gt;</p>
+            <p class="definicion">Define el pie de página de un documento o sección. Normalmente contiene información de autor, enlaces de contacto, derechos de autor o mapas del sitio.</p>
+            <p class="definicion">Ejemplo en código:</p>
+            <p class="bloque-codigo">&lt;footer&gt;<br>&nbsp;&nbsp;&lt;p&gt;&amp;copy; 2025 Mi Sitio Web&lt;/p&gt;<br>&nbsp;&nbsp;&lt;a href="aviso.html"&gt;Aviso de privacidad&lt;/a&gt;<br>&lt;/footer&gt;</p>
+            <p class="definicion">El ejemplo lo tienes hasta el final de la página.</p>
+        </div>
+
+        <div class="elemento">
+            <p class="titulo" id="h1-h6">&lt;h1&gt; a &lt;h6&gt;</p>
+            <p class="definicion">Definen encabezados jerárquicos en HTML. &lt;h1&gt; es el de mayor importancia (título principal), mientras que &lt;h6&gt; es el de menor relevancia. Se usan para estructurar el contenido y facilitar la lectura.</p>
+            <p class="definicion">Ejemplo en código:</p>
+            <p class="bloque-codigo">&lt;h1&gt;Encabezado principal&lt;/h1&gt;<br>&lt;h2&gt;Subencabezado&lt;/h2&gt;<br>&lt;h3&gt;Sección secundaria&lt;/h3&gt;</p>
+            <h3>Soy un encabezado h3</h3>
+            <h4>Soy un encabezado h4</h4>
+        </div>
+
+        <div class="elemento">
+            <p class="titulo" id="span">&lt;span&gt;</p>
+            <p class="definicion">Es un contenedor en línea que no tiene un significado semántico propio. Se usa para aplicar estilos o agrupar texto dentro de un párrafo sin alterar la estructura del documento.</p>
+            <p class="definicion">Ejemplo en código:</p>
+            <p class="bloque-codigo">&lt;p&gt;Este es un &lt;span style="color: red;"&gt;texto resaltado&lt;/span&gt; dentro de un párrafo.&lt;/p&gt;</p>
+            <p class="definicion">Nota: No se debe poner un "style" dentro de una etiqueta, esto es un ejemplo de uso, favor de no replicarlo.</p>
+        </div>
+
+        <div class="elemento">
+            <p class="titulo" id="a">&lt;a&gt;</p>
+            <p class="definicion">Crea hipervínculos hacia otras páginas, archivos, secciones internas o correos electrónicos. Puede usarse tanto para navegación externa como interna.</p>
+            <p class="definicion">Ejemplo en código:</p>
+            <p class="bloque-codigo">&lt;a href="https://www.ejemplo.com"&gt;Visitar sitio&lt;/a&gt;</p>
+            <a href="https://fi.uacam.mx" target="_blank">Vínculo Facultad de Ingeniería.</a>
+        </div>
+
+        <div class="elemento">
+            <p class="titulo" id="ol">&lt;ol&gt;</p>
+            <p class="definicion">Define una lista ordenada, donde los elementos aparecen numerados o con un marcador definido.</p>
+            <p class="definicion">Ejemplo en código:</p>
+            <p class="bloque-codigo">&lt;ol&gt;<br>&nbsp;&nbsp;&lt;li&gt;Primer paso&lt;/li&gt;<br>&nbsp;&nbsp;&lt;li&gt;Segundo paso&lt;/li&gt;<br>&nbsp;&nbsp;&lt;li&gt;Tercer paso&lt;/li&gt;<br>&lt;/ol&gt;</p>
+            <ol>
+                <li>Primer paso</li>
+                <li>Segundo paso</li>
+                <li>Tercer paso</li>
+            </ol>
+        </div>
+
+        <div class="elemento">
+            <p class="titulo" id="ul">&lt;ul&gt;</p>
+            <p class="definicion">Define una lista no ordenada, donde los elementos se muestran con viñetas.</p>
+            <p class="definicion">Ejemplo en código:</p>
+            <p class="bloque-codigo">&lt;ul&gt;<br>&nbsp;&nbsp;&lt;li&gt;Manzanas&lt;/li&gt;<br>&nbsp;&nbsp;&lt;li&gt;Peras&lt;/li&gt;<br>&nbsp;&nbsp;&lt;li&gt;Plátanos&lt;/li&gt;<br>&lt;/ul&gt;</p>
+            <ul>
+                <li>Manzanas</li>
+                <li>Peras</li>
+                <li>Plátanos</li>
+            </ul>
+        </div>
+
+        <div class="elemento">
+            <p class="titulo" id="li">&lt;li&gt;</p>
+            <p class="definicion">Representa un elemento dentro de una lista, ya sea ordenada (&lt;ol&gt;) o no ordenada (&lt;ul&gt;).</p>
+            <p class="definicion">Ejemplo en código:</p>
+            <p class="bloque-codigo">&lt;ul&gt;<br>&nbsp;&nbsp;&lt;li&gt;Elemento de lista&lt;/li&gt;<br>&lt;/ul&gt;</p>
+            <ul>
+                <li>Elemento de lista</li>
+            </ul>
+        </div>
+
+        <div class="elemento">
+            <p class="titulo" id="dl">&lt;dl&gt;</p>
+            <p class="definicion">Crea una lista de definiciones, útil para glosarios o pares de término-descripción.</p>
+            <p class="titulo">&lt;dt&gt;</p>
+            <p class="definicion">Define un término dentro de una lista de definiciones (&lt;dl&gt;).</p>
+            <p class="titulo">&lt;dd&gt;</p>
+            <p class="definicion">Proporciona la descripción o definición de un término dentro de una lista de definiciones (&lt;dl&gt;).</p>
+            <p class="definicion">Ejemplo en código:</p>
+            <p class="bloque-codigo">&lt;dl&gt;<br>&nbsp;&nbsp;&lt;dt&gt;HTML&lt;/dt&gt;<br>&nbsp;&nbsp;&lt;dd&gt;Lenguaje de marcado para crear páginas web.&lt;/dd&gt;<br>&lt;/dl&gt;</p>
+            <dl>
+                <dt>HTML</dt>
+                <dd>Lenguaje de marcado para crear páginas web.</dd>
+            </dl>
+        </div>
+
+        <div class="elemento">
+            <p class="titulo" id="table">&lt;table&gt;</p>
+            <p class="definicion">Representa una tabla de datos estructurada en filas y columnas.</p>
+            <p class="titulo">&lt;tr&gt;</p>
+            <p class="definicion">Define una fila dentro de una tabla.</p>
+            <p class="titulo">&lt;td&gt;</p>
+            <p class="definicion">Representa una celda de datos en una tabla.</p>
+            <p class="titulo">&lt;th&gt;</p>
+            <p class="definicion">Define una celda de encabezado dentro de una tabla. Normalmente se muestra en negrita y centrada.</p>
+            <p class="titulo">&lt;thead&gt;</p>
+            <p class="definicion">Agrupa el encabezado de una tabla, que contiene filas con títulos de columna.</p>
+            <p class="titulo">&lt;tbody&gt;</p>
+            <p class="definicion">Contiene el cuerpo principal de una tabla, donde se colocan los datos.</p>
+            <p class="titulo">&lt;tfoot&gt;</p>
+            <p class="definicion">Define el pie de una tabla, normalmente usado para totales o notas.</p>
+            <p class="definicion">Ejemplo en código:</p>
+            <p class="bloque-codigo">&lt;table border="1"&gt;<br>&nbsp;&nbsp;&lt;thead&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Mes&lt;/th&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Ventas&lt;/th&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>&nbsp;&nbsp;&lt;/thead&gt;<br>&nbsp;&nbsp;&lt;tbody&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Enero&lt;/td&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;$200&lt;/td&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Febrero&lt;/td&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;$250&lt;/td&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>&nbsp;&nbsp;&lt;/tbody&gt;<br>&nbsp;&nbsp;&lt;tfoot&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Total&lt;/td&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;$450&lt;/td&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>&nbsp;&nbsp;&lt;/tfoot&gt;<br>&lt;/table&gt;</p>
+            <div class="centrado">
+                <table border="1">
+                    <thead>
+                        <tr>
+                        <th>Mes</th>
+                        <th>Ventas</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td>Enero</td>
+                        <td>$200</td>
+                        </tr>
+                        <tr>
+                        <td>Febrero</td>
+                        <td>$250</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                        <td>Total</td>
+                        <td>$450</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+
+        <div class="elemento">
+            <p class="titulo" id="img">&lt;img&gt;</p>
+            <p class="definicion">Inserta una imagen en el documento. Debe incluir el atributo src (fuente) y se recomienda alt (texto alternativo).</p>
+            <p class="definicion">Ejemplo en código:</p>
+            <p class="bloque-codigo">&lt;img src="/assets/minion.jpg" alt="Imagen de un minion tierno"&gt;</p>
+            <div class="centrado">
+                <img src="/assets/minion.jpg" alt="Imagen de un minion tierno">
+            </div>
+        </div>
+
+        <div class="elemento">
+            <p class="titulo" id="audio">&lt;audio&gt;</p>
+            <p class="definicion">Reproduce archivos de audio directamente en la página. Puede incluir controles para pausar o ajustar volumen.</p>
+            <p class="titulo">&lt;source&gt;</p>
+            <p class="definicion">Define múltiples fuentes para &lt;audio&gt; o &lt;video&gt;, permitiendo compatibilidad con diferentes formatos.</p>
+            <p class="definicion">Ejemplo en código:</p>
+            <p class="bloque-codigo">&lt;audio controls&gt;<br>&nbsp;&nbsp;&lt;source src="/assets/himno-nacional.mp3" type="audio/mpeg"&gt;<br>&lt;/audio&gt;</p>
+            <p class="definicion">Favor de hacer clic en reproducir.</p>
+            <div class="centrado">
+                <audio controls>
+                    <source src="/assets/halo.mp3" type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+            </div>
+        </div>
+
+        <div class="elemento">
+            <p class="titulo" id="video">&lt;video&gt;</p>
+            <p class="definicion">Inserta un archivo de video en el documento, con soporte para controles como reproducción o pantalla completa.</p>
+            <p class="titulo">&lt;source&gt;</p>
+            <p class="definicion">Define múltiples fuentes para &lt;audio&gt; o &lt;video&gt;, permitiendo compatibilidad con diferentes formatos.</p>
+            <p class="definicion">Ejemplo en código:</p>
+            <p class="bloque-codigo">&lt;video controls width="300"&gt;<br>&nbsp;&nbsp;&lt;source src="/assets/clair-obscur.mp4" type="video/mp4"&gt;<br>&lt;/video&gt;</p>
+            <div class="centrado">
+                <video controls>
+                    <source src="/assets/clair-obscur.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento de audio.
+                </video>
+            </div>
+        </div>
+
+        <div class="elemento">
+            <p class="titulo" id="iframe">&lt;iframe&gt;</p>
+            <p class="definicion">Inserta una página web o recurso externo dentro de otra página.</p>
+            <p class="definicion">Ejemplo en código:</p>
+            <p class="bloque-codigo">&lt;iframe src="https://www.wikipedia.org" width="600" height="500"&gt;&lt;/iframe&gt;</p>
+            <div class="centrado">
+                <iframe src="https://www.wikipedia.org" frameborder="0" width="600" height="500"></iframe>
+            </div>
+        </div>
+
+        <div class="elemento">
+            <p class="titulo" id="object">&lt;object&gt;</p>
+            <p class="definicion">Permite incrustar recursos externos como imágenes, PDFs o aplicaciones en una página web.</p>
+            <p class="definicion">Ejemplo en código:</p>
+            <p class="bloque-codigo">&lt;object data="/assets/ejemplo.pdf" type="application/pdf" width="600" height="500"&gt;&lt;/object&gt;</p>
+            <div class="centrado">
+                <object data="/assets/ejemplo.pdf" type="application/pdf" width="600" height="500"></object>
+            </div>
+        </div>
+
+        <div class="elemento">
+            <p class="titulo" id="form">&lt;form&gt;</p>
+            <p class="definicion">Define un formulario para recopilar datos del usuario y enviarlos a un servidor.</p>
+            <p class="titulo">&lt;input&gt;</p>
+            <p class="definicion">Campo de entrada para recibir datos del usuario, como texto, contraseñas, correos o botones.</p>
+            <p class="titulo">&lt;select&gt;</p>
+            <p class="definicion">Crea un menú desplegable con varias opciones.</p>
+            <p class="titulo">&lt;option&gt;</p>
+            <p class="definicion">Define cada opción dentro de un menú desplegable (&lt;select&gt;).</p>
+            <p class="titulo">&lt;textarea&gt;</p>
+            <p class="definicion">Crea un área de texto de varias líneas para entradas largas como comentarios o mensajes.</p>
+            <p class="titulo">&lt;label&gt;</p>
+            <p class="definicion">Proporciona una etiqueta descriptiva para un campo de formulario, mejorando la accesibilidad.</p>
+            <p class="definicion">Ejemplo en código:</p>
+            <p class="bloque-codigo">&lt;form&gt;<br>&nbsp;&nbsp;&lt;p&gt;Formulario de ejemplo&lt;/p&gt;<br>&nbsp;&nbsp;&lt;label for="nombre"&gt;Nombre:&lt;/label&gt;<br>&nbsp;&nbsp;&lt;input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre"&gt;<br>&nbsp;&nbsp;&lt;label for="correo"&gt;Correo electrónico:&lt;/label&gt;<br>&nbsp;&nbsp;&lt;input type="email" id="correo" name="correo" placeholder="Escribe tu correo"&gt;<br>&nbsp;&nbsp;&lt;label for="pais"&gt;País:&lt;/label&gt;<br>&nbsp;&nbsp;&lt;select id="pais" name="pais"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="mx"&gt;México&lt;/option&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="es"&gt;España&lt;/option&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="ar"&gt;Argentina&lt;/option&gt;<br>&nbsp;&nbsp;&lt;/select&gt;<br>&nbsp;&nbsp;&lt;label for="mensaje"&gt;Mensaje:&lt;/label&gt;<br>&nbsp;&nbsp;&lt;textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..."&gt;&lt;/textarea&gt;<br>&nbsp;&nbsp;&lt;button type="button"&gt;Enviar&lt;/button&gt;<br>&lt;/form&gt;</p>
+            <div class="formulario">
+                <form>
+                    <p class="titulo-formulario">Formulario de ejemplo</p>
+                    <div class="campo">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre">
+                    </div>
+
+                    <div class="campo">
+                        <label for="correo">Correo electrónico:</label>
+                        <input type="email" id="correo" name="correo" placeholder="Escribe tu correo">
+                    </div>
+                    
+                    <div class="campo">
+                        <label for="pais">País:</label>
+                        <select id="pais" name="pais">
+                            <option value="mx">México</option>
+                            <option value="es">España</option>
+                            <option value="ar">Argentina</option>
+                        </select>
+                    </div>
+
+                    <div class="campo">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..."></textarea>
+                    </div>
+
+                    <div class="campo">
+                        <button type="button">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!--Pie de página-->
+    <footer>
+        <p>&copy; 2025 Cheat Sheet HTML | Todos los derechos reservados :v</p>
+    </footer>
+</body>
+</html>
